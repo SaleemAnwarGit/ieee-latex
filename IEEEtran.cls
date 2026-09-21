@@ -7,6 +7,8 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{url}
 
+\makeatletter
+
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -33,7 +35,6 @@
 \newcommand{\IEEEauthorblockA}[1]{\textit{#1}}
 \newcommand{\IEEEkeywords}[1]{\par\smallskip\textit{Index Terms---#1.}}
 
-\makeatletter
 \renewcommand{\maketitle}{%
   \twocolumn[\begin{@twocolumnfalse}
     \begin{center}

@@ -44,13 +44,13 @@ Keep `main.tex` responsible for document configuration and ordering. Keep the pa
 
 ### Figures and Images
 
-Keep image assets in `images/`. The introduction contains a one-column figure example, and the results section contains a two-column `figure*` example. Replace the placeholders with `\includegraphics` when adding a PNG, JPG, or PDF image:
+Keep image assets in `images/`. The introduction contains a one-column figure example, and the results section contains a two-column `figure*` example. Replace the sample SVG with your final image. SVG files are included with `\includesvg`:
 
 ```latex
-\includegraphics[width=\columnwidth]{images/your-image}
+\includesvg[width=\columnwidth]{images/your-image}
 ```
 
-Use `figure` for one-column figures and `figure*` for figures spanning both columns.
+The Codespace includes Inkscape and shell escape is enabled for SVG conversion. Use `figure` for one-column figures and `figure*` for figures spanning both columns.
 
 ### References
 

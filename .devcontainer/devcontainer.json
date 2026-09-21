@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {}
   },
-  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-science latexmk",
+  "updateContentCommand": "sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-science latexmk inkscape",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,7 +12,29 @@
       ],
       "settings": {
         "latex-workshop.latex.autoBuild.run": "onSave",
-        "latex-workshop.latex.recipe.default": "latexmk (pdflatex)",
+        "latex-workshop.latex.recipe.default": "latexmk",
+        "latex-workshop.latex.tools": [
+          {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-shell-escape",
+              "-pdf",
+              "%DOC%"
+            ]
+          }
+        ],
+        "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk",
+            "tools": [
+              "latexmk"
+            ]
+          }
+        ],
         "latex-workshop.view.pdf.viewer": "tab"
       }
     }
