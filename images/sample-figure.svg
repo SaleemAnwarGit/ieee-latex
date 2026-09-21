@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <rect width="720" height="360" fill="#f2f4f7"/>
+  <rect x="40" y="40" width="640" height="280" fill="white" stroke="#667085" stroke-width="3"/>
+  <path d="M90 260 L190 190 L280 225 L390 115 L500 170 L630 75" fill="none" stroke="#1f5f8b" stroke-width="8"/>
+  <circle cx="190" cy="190" r="9" fill="#1f5f8b"/>
+  <circle cx="390" cy="115" r="9" fill="#1f5f8b"/>
+  <circle cx="630" cy="75" r="9" fill="#1f5f8b"/>
+  <text x="360" y="295" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#344054">Sample figure - replace with paper artwork</text>
+</svg>
